@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /*colors*/
+
+  text-main: #18191f;
+  primary-color: #4caf4f;
+  neutral-color: #717171;
+  default-color: #ffffff;
+
+  /*radius*/
+  radius-medium: 6px;
+  radius-small: 4px;
+
+  /*padding*/
+  padding-medium: 20px;
+  padding-large: 32px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Découpage visuel de la page en balises
+Prendre les images / svg
+Créer les variables CSS
+Écrire le HTML
+Mettre en forme le CSS*/
