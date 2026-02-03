@@ -1,20 +1,33 @@
+/*Découpage visuel de la page en balises
+Prendre les images / svg
+Créer les variables CSS
+Écrire le HTML
+Mettre en forme le CSS*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   /*colors*/
 
-  text-main: #18191f;
-  primary-color: #4caf4f;
-  neutral-color: #717171;
-  default-color: #ffffff;
+  --text-main: #18191f;
+  --bg-neutral-silver: #f5f7fa;
+  --primary-color: #4caf4f;
+  --secondary-color: #e8f5e9;
+  --neutral-color: #717171;
+  --neutral-Dcolor: #4d4d4d;
+  --default-color: #ffffff;
 
   /*radius*/
-  radius-medium: 6px;
-  radius-small: 4px;
+  --radius-medium: 6px;
+  --radius-small: 4px;
 
   /*padding*/
-  padding-medium: 20px;
-  padding-large: 32px;
+  --padding-medium: 1rem;
+  --padding-large: 2rem;
+
+  /*gap*/
+  --gap-medium: 0.5rem;
+  --gap-large: 1rem;
 }
 
 * {
@@ -23,8 +36,151 @@
   box-sizing: border-box;
 }
 
-/*Découpage visuel de la page en balises
-Prendre les images / svg
-Créer les variables CSS
-Écrire le HTML
-Mettre en forme le CSS*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  background-color: var(--bg-neutral-silver);
+  justify-content: space-between;
+  align-items: start;
+  position: sticky;
+  top: 0;
+  padding: var(--padding-medium);
+  width: 100%;
+  nav {
+    display: none;
+    @media (width >=720px) {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      width: 100%;
+    }
+  }
+
+  button {
+    display: none;
+    @media (width >=720px) {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+    }
+  }
+  .burger > svg {
+    @media (width >=720px) {
+      display: none;
+    }
+  }
+}
+
+/*media du button*/
+
+.header_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-medium);
+}
+
+#section_one {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--bg-neutral-silver);
+  padding: var(--padding-medium);
+  gap: var(--gap-large);
+  h1 {
+    color: var(--neutral-Dcolor);
+    font-size: 4em;
+    padding: var(--padding-medium);
+  }
+  p {
+    color: var(--neutral-color);
+    padding: var(--padding-medium);
+  }
+  span {
+    color: var(--primary-color);
+  }
+  @media (width>= 720px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+.container_left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--padding-medium);
+  button {
+    max-width: 10rem;
+    padding: var(--padding-medium);
+    color: var(--default-color);
+    border: none;
+    border-radius: var(--radius-small);
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+}
+
+.group_element {
+  display: flex;
+  @media (width >=720px) {
+    display: flex;
+    flex-direction: column;
+
+    circles {
+      display: flex;
+      justify-items: center;
+    }
+  }
+}
+
+.circles {
+  display: flex;
+  gap: var(--gap-medium);
+  padding: var(--padding-medium);
+}
+
+.circle {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-medium);
+  height: 10px;
+  width: 10px;
+  background-color: rgb(131, 236, 131);
+  opacity: 50px;
+  border-radius: 50%;
+  &:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  @media (width >=720px) {
+    display: flex;
+    align-items: center; /*revoir*/
+  }
+}
+
+.container_illustration {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: var(--padding-medium);
+}
+img {
+  display: flex;
+  max-width: 100%;
+  aspect-ratio: auto;
+}
