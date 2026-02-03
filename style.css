@@ -59,6 +59,30 @@ header {
       list-style: none;
       width: 100%;
     }
+    nav {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    ul {
+      display: flex;
+      width: 100%;
+      list-style: none;
+      gap: 2rem;
+    }
+    a {
+      display: flex;
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 400;
+    }
+    .header_container {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   button {
@@ -71,14 +95,35 @@ header {
     }
   }
 
+  @media (width >=720px) {
+    .header_button {
+      display: flex;
+      gap: var(--gap-large);
+    }
+    .login,
+    .sign_up {
+      display: flex;
+      justify-content: center;
+      min-width: 6rem;
+      padding: var(--padding-medium);
+      border-radius: var(--radius-medium);
+    }
+    .login {
+      background: none;
+      color: var(--primary-color);
+    }
+    .sign_up {
+      background-color: var(--primary-color);
+      color: var(--default-color);
+    }
+  }
+
   .burger > svg {
     @media (width >=720px) {
       display: none;
     }
   }
 }
-
-/*media du button*/
 
 .header_container {
   display: flex;
@@ -185,4 +230,36 @@ img {
   display: flex;
   max-width: 100%;
   aspect-ratio: auto;
+}
+
+.sponsors_logos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--padding-medium);
+  justify-content: center;
+  align-items: center;
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  p {
+    color: var(--neutral-color);
+    padding: var(--padding-medium);
+  }
+}
+
+.sponsors {
+  display: flex;
+}
+
+.class {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: var(--padding-medium);
+  h3 {
+    color: var(--neutral-Dcolor);
+  }
 }

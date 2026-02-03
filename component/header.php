@@ -17,8 +17,8 @@
             </ul>
         </nav>
         <div class="header_button">
-            <button>Login</button>
-            <button>Sign up</button>
+            <button class="login">Login</button>
+            <button class="sign_up">Sign up</button>
         </div>
         <div class="burger">
             <?php
