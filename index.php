@@ -153,6 +153,73 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <h3>How to design your site footer like we did</h3>
+                <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+                <button>Learn more</button>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+                <h4>Tim Smith</h4>
+                <p>British Dragon Boat Racing Association</p>
+                <div>
+                    <div>
+                        svg
+                        svg
+                        svg
+                        svg
+                        svg
+                        svg
+                        svg
+                        svg
+                    </div>
+                    <p>Meet all customers</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3>Caring in the new marketing</h3>
+                <p>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+            </div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <p>Creating Streamlined Safeguarding Processes With OneRen</p>
+                    <div>
+                        <button class="btn-readMore">Readmore</button>
+                        svg
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>What are your safeguarding responsibilities and how can you manage them?</p>
+                    <div>
+                        <button class="btn-readMore">Readmore</button>
+                        svg
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>Revamping the Membership Model with Triathlon Australia</p>
+                    <div>
+                        <button class="btn-readMore">Readmore</button>
+                        svg
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php include_once '' ?>
+        <?php include_once '' ?>
     </main>
 </body>
 
